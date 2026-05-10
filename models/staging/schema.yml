@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_transactions
+    description: "Cleaned and renamed credit card transactions"
+    columns:
+      - name: transaction_time
+        tests:
+          - not_null
+      - name: transaction_amount
+        tests:
+          - not_null
+      - name: is_fraud
+        tests:
+          - not_null

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: fintech_raw
+    database: ml-infrastructure-portfolio
+    schema: fintech_raw
+    tables:
+      - name: transactions
+        description: "Raw credit card transactions with fraud labels"
